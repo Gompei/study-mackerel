@@ -1,3 +1,9 @@
+resource "mackerel_role" "cdn" {
+  service = mackerel_service.service.name
+  name    = "cdn"
+  memo    = "study resource"
+}
+
 resource "mackerel_role" "load_balancer" {
   service = mackerel_service.service.name
   name    = "alb"
